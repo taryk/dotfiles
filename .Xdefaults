@@ -1,0 +1,119 @@
+! URxvt.depth: 32
+! URxvt.background: rgba:1111/1111/1111/dddd
+!  scrollbar style - rxvt (default), plain (most compact), next, or xterm
+URxvt*scrollstyle:plain
+
+URxvt.perl-lib:/home/taryk/sources/perl/urxvt-perls
+
+URxvt.perl-ext-common:  default,tabbed,keyboard-select,url-select,clipboard
+
+! M-escape - keyboard selection mode
+!
+! h/j/k/l:    Move cursor left/down/up/right (also with arrow keys)
+! g/G/0/^/$/H/M/L/f/F/;/,/w/W/b/B/e/E: More vi-like cursor movement keys
+! '/'/?:      Start forward/backward search
+! n/N:        Repeat last search, N: in reverse direction
+! Ctrl-f/b:   Scroll down/up one screen
+! Ctrl-d/u:   Scroll down/up half a screen
+! v/V/Ctrl-v: Toggle normal/linewise/blockwise selection
+! y/Return:   Copy selection to primary buffer, Return: deactivate afterwards
+! q/Escape:   Deactivate keyboard selection mode
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
+! M-s - search
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+! M-u - url selection mode
+!
+! j/k:      Select next downward/upward URL (also with arrow keys)
+! g/G:      Select first/last URL (also with home/end key)
+! o/Return: Open selected URL in browser, Return: deactivate afterwards
+! y:        Copy (yank) selected URL and deactivate selection mode
+! q/Escape: Deactivate URL selection mode
+URxvt.keysym.M-u: perl:url-select:select_next
+
+! clipboard
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+! URxvt.copyCommand:  xsel -ib
+! URxvt.pasteCommand: xsel -ob
+
+URxvt.copyCommand:  xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+! tabbar
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    3
+URxvt.tabbed.tab-bg:    0
+
+! browser/command to open selected URL with
+URxvt.urlLauncher:   /usr/bin/x-www-browser
+! if set to true, all URLs get underlined
+URxvt.underlineURLs: true
+! mouse button to click-open URLs (default: 2)
+URvxt.urlButton:     2
+
+URxvt.termName:              rxvt-unicode
+URxvt.urgentOnBell:          true
+Urxvt.insecure:              false
+URxvt.transparent:           false
+Urxvt.loginShell:            true
+Urxvt.hold:                  false
+Urxvt.mouseWheelScrollPage:  true
+!                            URxvt.inheritPixmap: False
+URxvt.imLocale:              uk_UA.UTF-8
+!                            URxvt.scrollBar: false
+URxvt.saveLines:             5000
+URxvt.urlLauncher:           /usr/bin/chromium-browser
+URxvt.cursorBlink:           true
+URxvt.geometry:              100x50
+URxvt.fading:                6%
+urxvt.font:                  xft:Ubuntu Mono:pixelsize=16
+urxvt.boldFont:              xft:Ubuntu Mono:bold:pixelsize=16
+URxvt*background:            #303030
+urxvt.depth:                 32
+URxvt.background:            rgba:0000/0000/0000/dddd
+!                            URxvt.background: rgba:3f00/3f00/3f00/dddd
+URxvt.foreground:            grey80
+URxvt.tintColor:             #262626
+!URxvt.borderLess:           true
+URxvt.borderColor:           #888888
+Urxvt.externalBorder:        0
+Urxvt.internalBorder:        2
+! urxvt*scrollColor:
+! urxvt*underlineColor:
+! urxvt*highlightColor:
+
+
+*foreground:     rgba:0000/0000/0000/dddd
+*background:     rgb:10/10/10
+!black
+*color0:         rgb:20/20/20
+*color8:         rgb:75/77/73
+!red
+!*color1:         rgb:cc/00/00  
+*color9:         rgb:ef/29/29
+!green
+*color2:         rgb:4e/9a/06
+*color10:        rgb:8a/e2/34
+!brown/yellow
+*color3:         rgb:c4/a0/00
+*color11:        rgb:fc/e9/4f
+!blue
+*color4:         rgb:34/65/a4
+*color12:        rgb:72/9f/cf
+!magenta
+*color5:         rgb:75/50/7b
+*color13:        rgb:ad/7f/a8
+!cyan
+*color6:         rgb:06/98/9a
+*color14:        rgb:34/e2/e2
+!white
+*color7:         rgb:d3/d7/cf
+*color15:        rgb:ee/ee/ec
+
+! xterm
+XTerm*bellIsUrgent:  true
