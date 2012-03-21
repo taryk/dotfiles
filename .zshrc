@@ -1,16 +1,22 @@
 # ~/.zshrc - ZSH initial script
 #
 # Author: Taras Yagniuk <truestyler@gmail.com>
-# Version: 0.1
+# Version: 0.2
 # keywords: zsh shell emacs perl
 
 export HISTFILE=~/.zhistory
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 export HISTTIMEFORMAT="%Y-%m-%d %H:%I:%S %T "
-#eval `dircolors -b`
+# eval `dircolors -b`
 
 setopt extendedhistory
+
+# To save every command before it is executed
+setopt inc_append_history
+
+# To retrieve the history file everytime history is called upon
+setopt share_history
 
 autoload -U compinit
 compinit -C
@@ -18,10 +24,10 @@ compinit -C
 # colorized
 autoload -U colors && colors
 
-# hosts=(192.168.1.1
-#        192.168.1.2
-#        192.168.1.5)
-# zstyle '*' hosts $hosts
+hosts=(192.168.1.1
+       192.168.1.2
+       192.168.1.5)
+zstyle '*' hosts $hosts
 
 zstyle ':completion:*' menu yes select
 zstyle ':completion:*:processes' command 'ps xua'
@@ -42,6 +48,7 @@ fi
 #
 export MQHOST='localhost'
 
+## Proxies
 # export http_proxy='http://192.168.0.1:8080/'
 # export ftp_proxy='http://192.168.0.1:8080/'
 
@@ -156,7 +163,7 @@ if [ -d /usr/lib/postgresql/9.1/bin/ ]; then
     PATH="${PATH}":/usr/lib/postgresql/9.1/bin/
 fi
 
-export GTK2_RC_FILES="/home/taryk/.gtkrc"
+export GTK2_RC_FILES="/home/${USER}/.gtkrc"
 
 setopt autocd
 setopt extended_glob
@@ -183,7 +190,7 @@ alias cache_drop_3='sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"'
 alias new_login_in_window='gdmflexiserver --xnest'
 alias new_login='gdmflexiserver'
 
-alias netbeans_gtk='/usr/local/netbeans/bin/netbeans --laf GTK'
+# alias netbeans_gtk='/usr/local/netbeans/bin/netbeans --laf GTK'
 alias z='ps -Af | grep'
 
 # for awesome wm test
@@ -224,7 +231,7 @@ svn_ignore() {
 # PERL
 #
 
-# perlbrew ########
+## perlbrew
 alias pbi='perlbrew install'
 alias pbl='perlbrew list'
 alias pbo='perlbrew off'
@@ -233,8 +240,6 @@ alias pbu='perlbrew use'
 
 export PERLBREW_ROOT=/opt/perl5
 export PERLBREW_PATH=/opt/perl5/bin:/home/taryk/perl5/perlbrew/bin
-
-############ Perl ############
 
 # perldoc
 alias pd='perldoc'
@@ -279,8 +284,7 @@ say() {
   print "$1\n"
 }
 
-# perlbrew
-
+# imports perlbrew function
 source /opt/perl5/etc/bashrc
 
 # fucking great advice 
