@@ -1,0 +1,6 @@
+.emacs - emacs initial config
+.perltidyrc - PerlTidy rc file ( https://metacpan.org/module/Perl::Tidy )
+.xbindkeysrc - key bindings
+.Xdefaults - here is urxvt configuration
+.xxkbrc - XXkb rc file
+.zshrc - the Z shell initial confi
