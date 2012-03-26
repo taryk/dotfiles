@@ -215,8 +215,22 @@
 
 ;; {{
 ;; twitter
-(add-to-list 'load-path "~/.emacs.d/ublog")
-(require 'ublog)
+;; (add-to-list 'load-path "~/.emacs.d/ublog")
+;; (require 'ublog)
+;; }}
+
+;; {{
+;;; JIRA mode
+;;; jira via xml-rpc
+;; (require 'xml-rpc)
+;; (require 'jira)
+;;; jira via soap
+(setq load-path (cons "~/.emacs.d/emacs-soap-client" load-path))
+(require 'soap-client)
+(require 'jira2)
+
+;; jira params
+(load-file "~/.emacs.d/jira_auth.el")
 ;; }}
 
 ;; {{
@@ -322,7 +336,11 @@
 
 ;; perlbrew-mini
 (require 'perlbrew-mini)
-(perlbrew-mini-set-perls-dir "/opt/perl5/perls/")
+
+(if (string= (system-name) "darkspace")
+    (perlbrew-mini-set-perls-dir "/opt/perl5/perls/")
+    (perlbrew-mini-set-perls-dir "/opt/perl5/perlbrew/perls/"))
+    
 (perlbrew-mini-use "perl-5.14.2-threaded")
 
 ;; ffap-perl-module
@@ -489,7 +507,6 @@
                       :background nil)
   (set-face-background 'dropdown-list-face "lightgrey")
   (set-face-background 'dropdown-list-selection-face "grey")
-
 
   ;; ** Misc Config **
 
