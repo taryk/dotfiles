@@ -240,8 +240,45 @@
 ;; }}
 
 ;; {{
+;; Jabber
+(add-to-list 'load-path "~/.emacs.d/emacs-jabber-0.8.91/")
+(require 'jabber)
+
+;; jabber params
+(load-file "~/.emacs.d/jabber-auth-info.el")
+
+(custom-set-variables
+ '(jabber-alert-presence-hooks nil)
+ '(jabber-auto-reconnect t)
+ '(jabber-chat-buffer-show-avatar nil)
+ '(jabber-chat-delayed-time-format "%Y-%m-%d %H:%M:%S")
+ '(jabber-chat-time-format "%H:%M:%S")
+ '(jabber-events-confirm-composing nil)
+ '(jabber-history-enabled t)
+ '(jabber-history-muc-enabled t)
+ '(jabber-history-size-limit 1073741824)
+ '(jabber-libnotify-method (quote shell))
+ '(jabber-libnotify-urgency "normal")
+ '(jabber-roster-show-title t)
+ '(jabber-use-global-history nil)
+ '(jabber-vcard-avatars-retrieve nil))
+
+(custom-set-faces
+ '(jabber-chat-prompt-local ((t (:foreground "forest green" :weight bold))))
+ '(jabber-roster-user-online ((t (:foreground "royal blue" :slant normal :weight bold))))
+ '(jabber-title-large ((t (:inherit variable-pitch :weight bold :height 1.0 :width ultra-expanded))))
+ '(jabber-title-medium ((t (:inherit variable-pitch :weight bold :height 1.0 :width expanded)))))
+;; }}
+
+;; {{
 ;; ERC ( is a powerful, modular, and extensible Emacs InternetRelayChat client )
 ;; docs: http://mwolson.org/static/doc/erc.html )
+
+(custom-set-variables
+ '(erc-log-channels-directory "~/.emacs-irc-log")
+ '(erc-log-insert-log-on-open t)
+ '(erc-log-mode t)
+ '(erc-log-write-after-send t))
 
 (defmacro asf-erc-bouncer-connect (command server port nick ssl pass)
    "Create interactive command `command', for connecting to an IRC server. The
@@ -358,13 +395,7 @@
 ;; Perl::Critic
 (require 'perlcritic)
 
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(cperl-array-face ((t (:foreground "green" :weight bold))))
- '(cperl-hash-face ((t (:foreground "Red" :slant italic :weight bold)))))
+
 
 ;; flymake
 (require 'flymake)
@@ -692,13 +723,8 @@
   ;; ecb
   (add-to-list 'load-path "~/.emacs.d/ecb/")
   (load-file "~/.emacs.d/ecb/ecb.el")
-  (require 'ecb))
-  (custom-set-variables
-    ;; custom-set-variables was added by Custom.
-    ;; If you edit it by hand, you could mess it up, so be careful.
-    ;; Your init file should contain only one such instance.
-    ;; If there is more than one, they won't work right.
-   '(ecb-options-version "2.40"))
+  (require 'ecb)
+  (setq ecb-options-version "2.40"))
 ;; }}
 
 ;; {{
