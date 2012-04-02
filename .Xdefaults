@@ -1,3 +1,6 @@
+! Emacs
+Emacs.FontBackend: xft
+
 ! URxvt.depth: 32
 ! URxvt.background: rgba:1111/1111/1111/dddd
 !  scrollbar style - rxvt (default), plain (most compact), next, or xterm
@@ -48,6 +51,10 @@ URxvt.tabbed.tabbar-fg: 2
 URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg:    3
 URxvt.tabbed.tab-bg:    0
+
+! disable print screen
+rxvt.print-pipe: "cat > /dev/null"
+urxvt.print-pipe: "cat > /dev/null"
 
 ! browser/command to open selected URL with
 URxvt.urlLauncher:   /usr/bin/x-www-browser
