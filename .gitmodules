@@ -33,3 +33,7 @@
 [submodule ".emacs.d/packages/ublog"]
            path = .emacs.d/packages/ublog
            url = https://github.com/artagnon/ublog.el.git
+
+[submodule ".emacs.d/packages/heroku"]
+           path = .emacs.d/packages/heroku
+           url = https://github.com/technomancy/heroku.el.git
