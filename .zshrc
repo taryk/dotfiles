@@ -24,17 +24,34 @@ compinit -C
 # colorized
 autoload -U colors && colors
 
-hosts=(192.168.1.1
-       192.168.1.2
-       192.168.1.5)
-zstyle '*' hosts $hosts
+# hosts=(192.168.1.1
+#        192.168.1.2
+#        192.168.1.5)
+# zstyle '*' hosts $hosts
 
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' insert-unambiguous true
 zstyle ':completion:*' menu yes select
+zstyle ':completion:*' add-space true
 zstyle ':completion:*:processes' command 'ps xua'
 zstyle ':completion:*:processes' sort false
 zstyle ':completion:*:processes-names' command 'ps xho command'
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' old-menu false
+zstyle ':completion:*' original true
+zstyle ':completion:*' substitute 1
+zstyle ':completion:*' use-compctl true
+zstyle ':completion:*' verbose true
+zstyle ':completion:*' word true
+
+fpath=(~/.zsh/functions $fpath)
+
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export EDITOR=emacs
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     eval `dircolors`
@@ -221,6 +238,10 @@ svn_ignore() {
     svn propedit svn:ignore .
 }
 
+git_grep_rep() {
+  git grep $1 -- $(git rev-parse --show-toplevel)
+}
+
 # bindkey -s history-search-forward
 
 # newday() { mcd `date +%F` }
@@ -240,6 +261,8 @@ alias pbu='perlbrew use'
 
 export PERLBREW_ROOT=/opt/perl5
 export PERLBREW_PATH=/opt/perl5/bin:/home/taryk/perl5/perlbrew/bin
+
+############ Perl ############
 
 # perldoc
 alias pd='perldoc'
