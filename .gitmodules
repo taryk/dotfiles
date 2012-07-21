@@ -46,3 +46,6 @@
            path = .emacs.d/packages/cc-mode
            url = https://github.com/emacsmirror/cc-mode.git
 
+[submodule ".emacs.d/packages/haskell-mode"]
+           path = .emacs.d/packages/haskell-mode
+           url = https://github.com/haskell/haskell-mode.git
