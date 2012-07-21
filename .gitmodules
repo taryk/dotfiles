@@ -41,3 +41,8 @@
 [submodule ".emacs.d/packages/emacs-functions-for-perl"]
            path = .emacs.d/packages/emacs-functions-for-perl
            url = https://github.com/taryk/emacs-functions-for-perl.git
+
+[submodule ".emacs.d/packages/cc-mode"]
+           path = .emacs.d/packages/cc-mode
+           url = https://github.com/emacsmirror/cc-mode.git
+
