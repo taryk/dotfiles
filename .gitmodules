@@ -40,3 +40,6 @@
 [submodule ".emacs.d/packages/yasnippet"]
            path = .emacs.d/packages/yasnippet
            url = https://github.com/capitaomorte/yasnippet.git
+[submodule ".emacs.d/packages/linum-relative"]
+           path = .emacs.d/packages/linum-relative
+           url = https://github.com/coldnew/linum-relative.git
