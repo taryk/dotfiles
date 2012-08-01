@@ -1,0 +1,5 @@
+* TODO deployment
+* TODO Awesome WM config `rc.lua`
+* TODO Bash config `.bashrc`
+* TODO Global git config `.gitconfig`
+* TODO Global mercurial config `.hgrc`
