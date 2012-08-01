@@ -34,23 +34,22 @@
            path = .emacs.d/packages/heroku
            url = https://github.com/technomancy/heroku.el.git
 
-[submodule ".emacs.d/packages/emacs-functions-for-perl"]
-           path = .emacs.d/packages/emacs-functions-for-perl
-           url = https://github.com/taryk/emacs-functions-for-perl.git
-
 [submodule ".emacs.d/packages/cc-mode"]
-           path = .emacs.d/packages/cc-mode
-           url = https://github.com/emacsmirror/cc-mode.git
+	path = .emacs.d/packages/cc-mode
+	url = https://github.com/emacsmirror/cc-mode.git
 
 [submodule ".emacs.d/packages/haskell-mode"]
            path = .emacs.d/packages/haskell-mode
            url = https://github.com/haskell/haskell-mode.git
 
 [submodule ".emacs.d/packages/yasnippet"]
-           path = .emacs.d/packages/yasnippet
-           url = https://github.com/capitaomorte/yasnippet.git
+	path = .emacs.d/packages/yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
 
 [submodule ".emacs.d/packages/linum-relative"]
            path = .emacs.d/packages/linum-relative
            url = https://github.com/coldnew/linum-relative.git
 
+[submodule ".emacs.d/packages/emacs-functions-for-perl"]
+	path = .emacs.d/packages/emacs-functions-for-perl
+	url = https://github.com/taryk/emacs-functions-for-perl.git
