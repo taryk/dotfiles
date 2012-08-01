@@ -1,45 +1,56 @@
 [submodule ".emacs.d/packages/ahg"]
            path = .emacs.d/packages/ahg
            url = https://bitbucket.org/agriggio/ahg
+
 [submodule ".emacs.d/packages/clojure-mode"]
            path = .emacs.d/packages/clojure-mode
            url = https://github.com/technomancy/clojure-mode.git
+
 [submodule ".emacs.d/packages/egg"]
            path = .emacs.d/packages/egg
            url = https://github.com/byplayer/egg.git
+
 [submodule ".emacs.d/packages/egit"]
            path = .emacs.d/packages/egit
            url = https://github.com/jimhourihan/egit.git
+
 [submodule ".emacs.d/packages/emacs-juick-el"]
            path = .emacs.d/packages/emacs-juick-el
            url = https://github.com/mad/emacs-juick-el.git
+
 [submodule ".emacs.d/packages/emacs-soap-client"]
            path = .emacs.d/packages/emacs-soap-client
            url = https://code.google.com/p/emacs-soap-client/
+
 [submodule ".emacs.d/packages/nyan-mode"]
            path = .emacs.d/packages/nyan-mode
            url = https://github.com/TeMPOraL/nyan-mode.git
-[submodule ".emacs.d/packages/nyan-mode"]
-           path = .emacs.d/packages/nyan-mode
-           url = https://github.com/TeMPOraL/nyan-mode.git
+
 [submodule ".emacs.d/packages/ublog"]
            path = .emacs.d/packages/ublog
            url = https://github.com/artagnon/ublog.el.git
+
 [submodule ".emacs.d/packages/heroku"]
            path = .emacs.d/packages/heroku
            url = https://github.com/technomancy/heroku.el.git
+
 [submodule ".emacs.d/packages/emacs-functions-for-perl"]
            path = .emacs.d/packages/emacs-functions-for-perl
            url = https://github.com/taryk/emacs-functions-for-perl.git
+
 [submodule ".emacs.d/packages/cc-mode"]
            path = .emacs.d/packages/cc-mode
            url = https://github.com/emacsmirror/cc-mode.git
+
 [submodule ".emacs.d/packages/haskell-mode"]
            path = .emacs.d/packages/haskell-mode
            url = https://github.com/haskell/haskell-mode.git
+
 [submodule ".emacs.d/packages/yasnippet"]
            path = .emacs.d/packages/yasnippet
            url = https://github.com/capitaomorte/yasnippet.git
+
 [submodule ".emacs.d/packages/linum-relative"]
            path = .emacs.d/packages/linum-relative
            url = https://github.com/coldnew/linum-relative.git
+
