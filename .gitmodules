@@ -53,3 +53,19 @@
 [submodule ".emacs.d/packages/emacs-functions-for-perl"]
 	path = .emacs.d/packages/emacs-functions-for-perl
 	url = https://github.com/taryk/emacs-functions-for-perl.git
+
+[submodule ".emacs.d/packages/zenburn-emacs"]
+	path = .emacs.d/packages/zenburn-emacs
+	url = https://github.com/bbatsov/zenburn-emacs.git
+
+[submodule ".emacs.d/packages/emacs-ide"]
+	path = .emacs.d/packages/emacs-ide
+	url = https://github.com/emacsmirror/emacs-ide.git
+
+[submodule ".emacs.d/packages/haml-mode"]
+	path = .emacs.d/packages/haml-mode
+	url = https://github.com/nex3/haml-mode.git
+
+[submodule ".emacs.d/packages/multiple-cursors.el"]
+	path = .emacs.d/packages/multiple-cursors.el
+	url = https://github.com/magnars/multiple-cursors.el.git
