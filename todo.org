@@ -3,3 +3,10 @@
 * TODO Bash config `.bashrc`
 * TODO Global git config `.gitconfig`
 * TODO Global mercurial config `.hgrc`
+* TODO Emacs configs
+** dependencies [0/3]
+*** TODO pymacs (init-python)
+*** TODO ropemacs (init-python)
+*** TODO xmlstarlet (flymake, nxhtml)
+** functions
+*** TODO json formatter (json_xs)
