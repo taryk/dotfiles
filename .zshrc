@@ -74,10 +74,10 @@ fpath=(~/.zsh/functions $fpath)
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-if [ -e /usr/bin/emacs24 ]; then
-    export EDITOR=emacs24
+if [ -e /usr/bin/emacsclient.emacs24 ]; then
+    export EDITOR=emacsclient.emacs24
 else
-    export EDITOR=emacs
+    export EDITOR=emacsclient.emacs
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
@@ -300,11 +300,11 @@ latest-perl() {
 
 # newpl - creates a basic Perl script file and opens it with `emacs -nw`
 newpl () {
-  # set $EDITOR to 'vim' if it is undefinned
+  # set $EDITOR to 'emacs' if it is undefinned
   # [[ -z $EDITOR ]] && EDITOR=emacs 
 
   # if the file exists, just open it
-  [[ -e $1 ]] && print "$1 exists; not modifying.\n" && emacs -nw $1
+  [[ -e $1 ]] && print "$1 exists; not modifying.\n" && emacsclient.emacs24 -nw $1
 
   # if it doesn't, make it, and open it
   [[ ! -e $1 ]] && print '#!/usr/bin/perl'"\n"'use strict;'"\n"'use warnings;'\
