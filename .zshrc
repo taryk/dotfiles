@@ -82,7 +82,7 @@ fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     eval `dircolors`
-    alias ls='ls --color=auto'
+    alias ls='ls --color=auto -F'
     export GREP_OPTIONS='--color=auto'
     export GREP_COLOR='1;32'
 fi
@@ -104,7 +104,7 @@ if [ -f /usr/bin/grc ]; then
     alias ${c}="grca ${c}"
   done
 
-  alias ll="grca ls --color=force -l"
+  alias ll="grca ls --color=force -lF"
   alias ccal="grca cal"
 
 fi
@@ -214,8 +214,8 @@ export GTK2_RC_FILES="/home/${USER}/.gtkrc"
 #
 
 alias sdr="screen -aAdr"
-alias la="ls -A"
-alias ll="ls -lA"
+alias la="ls -AF"
+alias ll="ls -lAF"
 alias grep='grep --exclude="*.svn*"'
 alias sudos="sudo -s"
 alias mkpasswd="head -c5 /dev/urandom | xxd -ps"
