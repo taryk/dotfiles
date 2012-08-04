@@ -1,7 +1,7 @@
 # ~/.zshrc - ZSH initial script
 #
 # Author: Taras Yagniuk <mrtaryk@gmail.com>
-# Version: 0.2
+# Version: 0.3
 # keywords: zsh shell emacs perl
 
 export HISTFILE=~/.zhistory
@@ -24,7 +24,9 @@ setopt extended_glob
 setopt correct
 
 setopt hist_expire_dups_first
-setopt hist_ignore_dups # ignore duplication command history list
+
+# ignore duplication command history list
+setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt hist_verify
 
@@ -81,10 +83,11 @@ zstyle ':completion:*' use-compctl true
 zstyle ':completion:*' verbose true
 zstyle ':completion:*' word true
 
-fpath=(~/.zsh/functions $fpath)
+# fpath=(~/.zsh/functions $fpath)
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+
 if [ -e /usr/bin/emacsclient.emacs24 ]; then
     export EDITOR=emacsclient.emacs24
 else
@@ -98,27 +101,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     export GREP_COLOR='1;32'
 fi
 
-#
-# RabbitMQ
-#
-export MQHOST='localhost'
-
 ## Proxies
 # export http_proxy='http://192.168.0.1:8080/'
 # export ftp_proxy='http://192.168.0.1:8080/'
-
-if [ -f /usr/bin/grc ]; then
-    
-  alias grca="grc --colour=auto"
-
-  for c in ping traceroute make diff last cvs netstat ifconfig uptime vmstat iostat df mount uname ps route lsmod whereis ; do
-    alias ${c}="grca ${c}"
-  done
-
-  alias ll="grca ls --color=force -lF"
-  alias ccal="grca cal"
-
-fi
 
 autoload promptinit
 promptinit
@@ -132,54 +117,8 @@ promptinit
 # export PROMPT_COMMAND="echo -ne '\a'"
 # for zsh:
 precmd () (
-    echo -ne '\a'
+  echo -ne '\a'
 )
-
-case $TERM in
-  xterm*|rxvt*)
-    
-    #
-    # PS1 - The value of this parameter is expanded and used as the primary prompt string. The default value is \s-\v\$ .
-    #
-    export PS1="%{$fg[blue]%}%n%{$reset_color%}%\@%{$bg[red]%}%m%{$reset_color%} %{$fg[yellow]%}(%T)%{$reset_color%} %{$fg[magenta]%}%\{ %{$reset_color%}%~%{$fg[magenta]%} %\}%{$reset_color%}%{$fg[green]%}%#%{$reset_color%} "
-
-    #
-    # PS2 - The value of this parameter is expanded as with PS1 and used as the secondary prompt string. The default is >
-    # 
-    # export PS2=
-
-    #
-    # PS3 - The value of this parameter is used as the prompt for the select command
-    #
-    # export PS3=
-
-    #
-    # PS4 - The value of this parameter is expanded as with PS1 and the value is printed before each command bash displays during an execution trace. 
-    # The first character of PS4 is replicated multiple times, as necessary, to indicate multiple levels of indirection. The default is +
-    #
-    # export PS4=
-    export TERM=xterm-256color
-    ;;
-
-  # It is helpful to know when you're in screen.
-  screen)
-    #precmd () { print -Pn "\033k%~\033\\" }
-    #preexec () { print -Pn "\033k$1\033\\" }
-    export PS1="[screen] %{$fg[blue]%}%n%{$reset_color%}%\@%{$fg[red]%}%m%{$reset_color%} %{$fg[yellow]%}(%T)%{$reset_color%} %{$fg[magenta]%}%\{ %{$reset_color%}%~%{$fg[magenta]%} %\}%{$reset_color%}%{$fg[green]%}%#%{$reset_color%} "
-    ;;
-
-  # linux tty
-  linux)
-    export PS1="[%l] %{$fg[blue]%}%n%{$reset_color%}%\@%{$bg[red]%}%m%{$reset_color%} %{$fg[yellow]%}(%T)%{$reset_color%} %{$fg[magenta]%}%\{ %{$reset_color%}%~%{$fg[magenta]%} %\}%{$reset_color%}%{$fg[green]%}%#%{$reset_color%} "
-    ;;
-
-  # emacs terminals
-  emacs*|eterm*)
-    export PS1="[emacs] %n@%m { %~ } %# "
-  
-#  eterm-color)
-#    export PS1="[emacs] %{$fg[blue]%}%n%{$reset_color%}%\@%{$bg[red]%}%m%{$reset_color%} %{$fg[yellow]%}(%T)%{$reset_color%} %{$fg[magenta]%}%\{ %{$reset_color%}%~%{$fg[magenta]%} %\}%{$reset_color%}%{$fg[green]%}%#%{$reset_color%} "    
-esac
 
 #
 # Emacs Tramp hangs every time you try to connect.
@@ -193,32 +132,6 @@ if [[ "$TERM" == "dumb" ]]; then
   unfunction preexec
   PS1='$ '
 fi
-
-#
-# Puts ~/bin to PATH if exists
-#
-if [ -d ~/bin ] ; then
-  PATH=~/bin:"${PATH}"
-fi
-
-#
-# Apache Debry (JavaDB)
-#
-# if [ -d /usr/lib/jvm/java-6-sun-1.6.0.20/db/bin/ ] ; then
-#    PATH="${PATH}":/usr/lib/jvm/java-6-sun-1.6.0.20/db/bin/
-# fi
-# export DERBY_HOME="/usr/lib/jvm/java-6-sun-1.6.0.20/db/"
-# export CLASSPATH=.:${DERBY_HOME}/lib/derby.jar
-#
-
-#
-# PostgreSQL 9
-#
-if [ -d /usr/lib/postgresql/9.1/bin/ ]; then
-    PATH="${PATH}":/usr/lib/postgresql/9.1/bin/
-fi
-
-export GTK2_RC_FILES="/home/${USER}/.gtkrc"
 
 # 
 # Aliases
@@ -257,7 +170,6 @@ alias z='ps -Af | grep'
 # for awesome wm test
 alias awetest="Xephyr -ac -br -noreset -screen 800x600 :1 & sleep 1 && DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.lua"
 
-
 alias -g G='| grep'
 alias -g GI='| grep -i'
 alias -g GIR='| grep -ir'
@@ -283,108 +195,33 @@ alias -s {jpeg,jpg,png}=$IMAGE_VIEWER
 alias -s {ods,xls,xlsx}=$OFFICE_TABLES
 alias -s {pdf,djvu,epub}=$PDF_VIEWER
 
-# source local zshalias
-if [ -e ~/.zshalias.local ]; then
-  source ~/.zshalias.local
-fi
-
-#
-# User funcs
-#
-
-fix_mp3() { 
-    find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1 
-}
-
-mpg2flv() { 
-    ffmpeg -i $1 -ar 22050 -ab 32 -f flv -s 320x240 `echo $1 | awk -F . '{print $1}'`.flv 
-}
-
-mcd() { 
-    mkdir $1; cd $1 
-}
-
-svn_ignore() {
-    svn propedit svn:ignore .
-}
-
-git_grep_rep() {
-  git grep $1 -- $(git rev-parse --show-toplevel)
-}
-
-
-# newday() { mcd `date +%F` }
-# c() { awk "{ print \$$1 }" }
-# svnid() { svn propset svn:keywords "Author Date Id Revision" $1 }
-
-#
-# PERL
-#
-
-## perlbrew
-alias pbi='perlbrew install'
-alias pbl='perlbrew list'
-alias pbo='perlbrew off'
-alias pbs='perlbrew switch'
-alias pbu='perlbrew use'
-
-export PERLBREW_ROOT=/opt/perl5
-export PERLBREW_PATH=/opt/perl5/bin:/home/taryk/perl5/perlbrew/bin
-
-############ Perl ############
-
-# perldoc
-alias pd='perldoc'
-
-# use perl like awk/sed
-alias ple='perl -wlne'
-
-# latest stable perl version
-latest-perl() {
-    curl -s http://www.perl.org/get.html | perl -wlne 'if (/perl\-([\d\.]+)\.tar\.gz/) { print $1; exit;}'
-}
-
-# newpl - creates a basic Perl script file and opens it with `emacs -nw`
-newpl () {
-  # set $EDITOR to 'emacs' if it is undefinned
-  # [[ -z $EDITOR ]] && EDITOR=emacs 
-
-  # if the file exists, just open it
-  [[ -e $1 ]] && print "$1 exists; not modifying.\n" && emacsclient.emacs24 -nw $1
-
-  # if it doesn't, make it, and open it
-  [[ ! -e $1 ]] && print '#!/usr/bin/perl'"\n"'use strict;'"\n"'use warnings;'\
-          "\n\n" > $1 && emacs -nw $1
-}
-
-# pgs - Perl Global Substitution
-# find pattern          = 1st arg
-# replace pattern       = 2nd arg
-# filename              = 3rd arg
-pgs() { # [find] [replace] [filename]
-  perl -i.orig -pe 's/'"$1"'/'"$2"'/g' "$3"
-}
-
-
-# Perl grep, because 'grep -P' is terrible. Lets you work with pipes or files.
-prep() { # [pattern] [filename unless STDOUT]
-  perl -nle 'print if /'"$1"'/;' $2
-}
-
-# say - append a newline to 'print'
-say() {
-  print "$1\n"
-}
-
-# imports perlbrew function
-source /opt/perl5/etc/bashrc
-
 # directories
 b=$HOME/bin ;           : ~b
 D=$HOME/Downloads ;     : ~D
 Db=$HOME/Dropbox ;      : ~Db
 Dev=$HOME/Development ; : ~Dev
 M=$HOME/Music ;         : ~M
+f=/mnt/flash ;          : ~f
+l=/var/log ;            : ~l
+e=/etc ;                : ~e
 
-# fucking great advice 
-# echo -e `curl -s  http://fucking-great-advice.ru/api/random | awk -F \" '{print $8}'` |sed 's/\&nbsp;/ /g'
+# source local zshalias
+if [ -e ~/.zshalias.local ]; then
+  source ~/.zshalias.local
+fi
+
+ZSHRCDIR='~/.zsh'
+
+# load files from ~/.zsh/*.zsh
+if [ -d $ZSHRCDIR ] ; then
+  for zshrcfile in "${ZSHRCDIR}/*.zsh"; do
+    source $zshrcfile
+  done
+fi
+
+#
+# Puts ~/bin to PATH if exists
+#
+if [ -d ~/bin ] ; then
+  PATH=~/bin:"${PATH}"
+fi

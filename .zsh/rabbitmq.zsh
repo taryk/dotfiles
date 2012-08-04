@@ -1,0 +1,6 @@
+### {{
+# RabbitMQ
+
+export MQHOST='localhost'
+
+### }}
