@@ -333,5 +333,12 @@ say() {
 # imports perlbrew function
 source /opt/perl5/etc/bashrc
 
+# directories
+b=$HOME/bin ;           : ~b
+D=$HOME/Downloads ;     : ~D
+Db=$HOME/Dropbox ;      : ~Db
+Dev=$HOME/Development ; : ~Dev
+M=$HOME/Music ;         : ~M
+
 # fucking great advice 
 # echo -e `curl -s  http://fucking-great-advice.ru/api/random | awk -F \" '{print $8}'` |sed 's/\&nbsp;/ /g'
