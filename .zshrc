@@ -1,6 +1,6 @@
 # ~/.zshrc - ZSH initial script
 #
-# Author: Taras Yagniuk <truestyler@gmail.com>
+# Author: Taras Yagniuk <mrtaryk@gmail.com>
 # Version: 0.2
 # keywords: zsh shell emacs perl
 
@@ -45,7 +45,18 @@ bindkey '\C-x\C-e' edit-command-line
 # }}
 
 bindkey '^r' history-incremental-search-backward
-bindkey -s "\C-h" "history   "
+bindkey -s "\C-h" "history\r"
+
+bindkey '^[[1;5D' emacs-backward-word
+bindkey '^[[1;5C' emacs-forward-word
+
+bindkey "\e[5~" history-search-backward
+bindkey "\e[6~" history-search-forward
+
+bindkey    "^[[A" history-beginning-search-backward
+bindkey -a "^[[A" history-beginning-search-backward
+bindkey    "^[[B" history-beginning-search-forward
+bindkey -a "^[[B" history-beginning-search-forward
 
 # hosts=(192.168.1.1
 #        192.168.1.2
@@ -214,8 +225,17 @@ export GTK2_RC_FILES="/home/${USER}/.gtkrc"
 #
 
 alias sdr="screen -aAdr"
-alias la="ls -AF"
+alias la="ls -hAF"
 alias ll="ls -lAF"
+alias li='ls -hial'
+alias ls='ls -hF --color=auto'
+alias lsa='ls -hld .*'
+alias lsd='ls -hld *(-/DN)'
+alias mv='nocorrect mv -i'
+alias rm='nocorrect rm -i'
+alias rmf='nocorrect rm -f'
+alias rmrf='nocorrect rm -fR'
+alias ps='nocorrect ps auxww'
 alias grep='grep --exclude="*.svn*"'
 alias sudos="sudo -s"
 alias mkpasswd="head -c5 /dev/urandom | xxd -ps"
@@ -236,6 +256,32 @@ alias z='ps -Af | grep'
 
 # for awesome wm test
 alias awetest="Xephyr -ac -br -noreset -screen 800x600 :1 & sleep 1 && DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.lua"
+
+
+alias -g G='| grep'
+alias -g GI='| grep -i'
+alias -g GIR='| grep -ir'
+alias -g H='| head'
+alias -g L='| less'
+alias -g M='| more'
+alias -g N='2>/dev/null'
+alias -g T='| tail'
+alias -g TF='| tail -f'
+
+IMAGE_VIEWER='geeqie'
+OFFICE_WRITER='libreoffice --writer --nologo'
+OFFICE_TABLES='libreoffice --calc --nologo'
+PDF_VIEWER='okular'
+PLAINTEXT_EDITOR=$EDITOR
+VIDEO_PLAYER='smplayer'
+
+alias -s {asf,avi,divx,flv,mkv,mp4,mpg,ogp,ts,vob,wmv}=$VIDEO_PLAYER
+alias -s conf=$PLAINTEXT_EDITOR
+alias -s {doc,docx,odt}=$OFFICE_WRITER
+alias -s exe='wine'
+alias -s {jpeg,jpg,png}=$IMAGE_VIEWER
+alias -s {ods,xls,xlsx}=$OFFICE_TABLES
+alias -s {pdf,djvu,epub}=$PDF_VIEWER
 
 # source local zshalias
 if [ -e ~/.zshalias.local ]; then
