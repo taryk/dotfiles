@@ -11,6 +11,7 @@ export HISTTIMEFORMAT="%Y-%m-%d %H:%I:%S %T "
 # eval `dircolors -b`
 
 setopt extendedhistory
+setopt append_history
 
 # To save every command before it is executed
 setopt inc_append_history
@@ -18,11 +19,27 @@ setopt inc_append_history
 # To retrieve the history file everytime history is called upon
 setopt share_history
 
+setopt autocd
+setopt extended_glob
+setopt correct
+
+setopt hist_expire_dups_first
+setopt hist_ignore_dups # ignore duplication command history list
+setopt hist_ignore_space
+setopt hist_verify
+
+setopt auto_name_dirs
+setopt auto_pushd
+setopt pushd_ignore_dups
+
 autoload -U compinit
 compinit -C
 
 # colorized
 autoload -U colors && colors
+
+bindkey '^r' history-incremental-search-backward
+bindkey -s "\C-h" "history   "
 
 # hosts=(192.168.1.1
 #        192.168.1.2
@@ -182,10 +199,6 @@ fi
 
 export GTK2_RC_FILES="/home/${USER}/.gtkrc"
 
-setopt autocd
-setopt extended_glob
-setopt correct
-
 # 
 # Aliases
 #
@@ -199,6 +212,7 @@ alias mkpasswd="head -c5 /dev/urandom | xxd -ps"
 alias mkpath='mkdir -p'
 alias ..='cd ..'
 alias cd..='cd ..'
+alias -- -='cd -'
 alias sshx='ssh -X'
 alias cache_drop='sudo sh -c "echo 1 > /proc/sys/vm/drop_caches"'
 alias cache_drop_2='sudo sh -c "echo 2 > /proc/sys/vm/drop_caches"'
@@ -242,7 +256,6 @@ git_grep_rep() {
   git grep $1 -- $(git rev-parse --show-toplevel)
 }
 
-# bindkey -s history-search-forward
 
 # newday() { mcd `date +%F` }
 # c() { awk "{ print \$$1 }" }
