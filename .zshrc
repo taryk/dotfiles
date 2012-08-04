@@ -38,6 +38,12 @@ compinit -C
 # colorized
 autoload -U colors && colors
 
+# {{ edit command line in external editor
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\C-x\C-e' edit-command-line
+# }}
+
 bindkey '^r' history-incremental-search-backward
 bindkey -s "\C-h" "history   "
 
@@ -68,7 +74,11 @@ fpath=(~/.zsh/functions $fpath)
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-export EDITOR=emacs
+if [ -e /usr/bin/emacs24 ]; then
+    export EDITOR=emacs24
+else
+    export EDITOR=emacs
+fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     eval `dircolors`
