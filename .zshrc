@@ -87,7 +87,6 @@ zstyle ':completion:*' word true
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-export PAGER='less'
 
 if [ -e /usr/bin/emacsclient.emacs24 ]; then
   export EDITOR=emacsclient.emacs24
