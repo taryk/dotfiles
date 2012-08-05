@@ -210,11 +210,11 @@ if [ -e ~/.zshalias.local ]; then
   source ~/.zshalias.local
 fi
 
-ZSHRCDIR='~/.zsh'
+ZSHRCDIR="${HOME}/.zsh/"
 
 # load files from ~/.zsh/*.zsh
-if [ -d $ZSHRCDIR ] ; then
-  for zshrcfile in "${ZSHRCDIR}/*.zsh"; do
+if [ -e $ZSHRCDIR ]; then
+  for zshrcfile in $ZSHRCDIR/*.zsh ; do
     source $zshrcfile
   done
 fi
