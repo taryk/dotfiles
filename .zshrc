@@ -43,6 +43,10 @@ autoload -U colors && colors
 # {{ edit command line in external editor
 autoload -U edit-command-line
 zle -N edit-command-line
+
+# Emacs style keys
+bindkey -e
+
 bindkey '\C-x\C-e' edit-command-line
 # }}
 
@@ -198,12 +202,32 @@ f=/mnt/flash ;          : ~f
 l=/var/log ;            : ~l
 e=/etc ;                : ~e
 
+ZSHRCDIR="${HOME}/.zsh/"
+
+# re-compile zsh rc files
+src() {
+  autoload -U zrecompile
+
+  [ -f $HOME/.zshrc ] && zrecompile -p $HOME/.zshrc
+  [ -f $HOME/.zshrc.zwc.old ] && rm -f $HOME/.zshrc.zwc.old
+
+  [ -f $HOME/.zshrc.local ] && zrecompile -p $HOME/.zshrc.local
+  [ -f $HOME/.zshrc.local.zwc.old ] && rm -f $HOME/.zshrc.local.zwc.old
+
+  if [ -e $ZSHRCDIR ]; then
+    for zshrcfile in $ZSHRCDIR/*.zsh ; do
+      zrecompile -p $zshrcfile
+      [ -f "${zshrcfile}.zwc.old" ] && rm -f "${zshrcfile}.zwc.old"
+    done
+  fi
+
+  source $HOME/.zshrc
+}
+
 # source local zshalias
 if [ -e ~/.zshalias.local ]; then
   source ~/.zshalias.local
 fi
-
-ZSHRCDIR="${HOME}/.zsh/"
 
 # load files from ~/.zsh/*.zsh
 if [ -e $ZSHRCDIR ]; then
