@@ -7,7 +7,7 @@ case $TERM in
     #
     # PS1 - The value of this parameter is expanded and used as the primary prompt string. The default value is \s-\v\$ .
     #
-    export PS1="%{$fg[blue]%}%n%{$reset_color%}%\@%{$bg[red]%}%m%{$reset_color%} %{$fg[yellow]%}(%T)%{$reset_color%} %{$fg[magenta]%}%\{ %{$reset_color%}%~%{$fg[magenta]%} %\}%{$reset_color%}%{$fg[green]%}%#%{$reset_color%} "
+    export PS1="%{$fg[blue]%}%n%{$reset_color%}%\@%{$bg[red]%}%m%{$reset_color%} %{$fg[yellow]%}(%T)%{$reset_color%} %{$fg[magenta]%}%\{ %{$reset_color%}%~${PROMPT_INSIDE}%{$fg[magenta]%} %\}%{$reset_color%}%{$fg[green]%}%#%{$reset_color%} "
 
     #
     # PS2 - The value of this parameter is expanded as with PS1 and used as the secondary prompt string. The default is >
