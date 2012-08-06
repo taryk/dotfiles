@@ -69,3 +69,6 @@
 [submodule ".emacs.d/packages/multiple-cursors.el"]
 	path = .emacs.d/packages/multiple-cursors.el
 	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule ".emacs.d/packages/pymacs"]
+	path = .emacs.d/packages/pymacs
+	url = https://github.com/pinard/Pymacs.git
