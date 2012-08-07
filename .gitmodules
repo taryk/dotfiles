@@ -69,3 +69,6 @@
 [submodule ".emacs.d/packages/multiple-cursors.el"]
 	path = .emacs.d/packages/multiple-cursors.el
 	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule ".emacs.d/packages/mmm-mode"]
+	path = .emacs.d/packages/mmm-mode
+	url = https://github.com/purcell/mmm-mode.git
