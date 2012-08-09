@@ -4,6 +4,8 @@
 #
 # Version: 0.1.3
 #
+# dependencies: xbindkeys, xbindkeys-config, xsel
+#
 # If you edit this, do not forget to uncomment any lines that you change.
 # The pound(#) symbol may be used anywhere for comments.
 #
