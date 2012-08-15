@@ -28,5 +28,6 @@ auto-save-list/*
 
 # logs
 #-----------------------
+org-clock-save.el
 logs/*
 
