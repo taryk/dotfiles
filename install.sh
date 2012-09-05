@@ -58,7 +58,7 @@ for INDEX in $(seq 0 $LASTINDEX); do
           mv "${DOTFILE}" "${BACKUPDIR}/${FILE}"
           echo "old file '${DOTFILE}' has been moved to '${BACKUPDIR}/${FILE}'"
       fi
-      ln -s "${FILE}" "${DOTFILE}"
+      ln -s "${PWD}/${FILE}" "${DOTFILE}"
       echo "done"
     fi
 done
