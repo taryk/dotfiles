@@ -18,7 +18,7 @@ bin
 .config/awesome
 )
 
-BACKUPDIR="~/backups/backup-$(date +'%Y%m%d%H%M%S')"
+BACKUPDIR="${HOME}/backups/backup-$(date +'%Y%m%d%H%M%S')"
 MOVED=0
 
 function mkbackupdir {
