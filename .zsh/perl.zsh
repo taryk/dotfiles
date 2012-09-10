@@ -13,7 +13,9 @@ export PERLBREW_ROOT=/opt/perl5
 export PERLBREW_PATH=/opt/perl5/bin:/home/taryk/perl5/perlbrew/bin
 
 # imports perlbrew function
-source /opt/perl5/etc/bashrc
+if [ -f /opt/perl5/etc/bashrc ]; then
+    source /opt/perl5/etc/bashrc
+fi
 
 # perldoc
 alias pd='perldoc'
