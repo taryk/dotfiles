@@ -38,7 +38,7 @@ Just run the `install.sh`
     Dotfiles Installer
     ------------------
     Updating submodules..
-    [ ... ]
+    [ ... skipped lines ... ]
     [1/11]: install '/home/someuser/bin' [y/n] ? y
     done
     [2/11]: install '/home/someuser/.zshrc' [y/n] ? y 
