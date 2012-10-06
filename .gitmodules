@@ -7,3 +7,6 @@
 [submodule ".config/awesome"]
 	path = .config/awesome
 	url = https://github.com/taryk/awesomerc.git
+[submodule "bin"]
+	path = bin
+	url = https://github.com/taryk/scripts.git
