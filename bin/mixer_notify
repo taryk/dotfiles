@@ -1,2 +1,0 @@
-#!/bin/bash
-notify-send $1 $(echo $(amixer get Master) | awk "{ print \$22 }")
