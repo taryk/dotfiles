@@ -242,3 +242,6 @@ fi
 if [ -d ~/bin ] ; then
   PATH=~/bin:"${PATH}"
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
