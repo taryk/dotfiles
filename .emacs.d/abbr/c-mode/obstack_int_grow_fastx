@@ -1,1 +1,0 @@
-obstack_int_grow_fast(<field "struct obstack *OBSTACK-PTR">, <field "int DATA">)<endpoint>

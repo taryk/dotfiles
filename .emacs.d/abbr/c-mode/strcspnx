@@ -1,1 +1,0 @@
-strcspn(<field "const char *STRING">, <field "const char *STOPSET">)<endpoint>

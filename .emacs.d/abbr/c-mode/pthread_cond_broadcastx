@@ -1,1 +1,0 @@
-pthread_cond_broadcast(<field "pthread_cond_t *COND">)<endpoint>

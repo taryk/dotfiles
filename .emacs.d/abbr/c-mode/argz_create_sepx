@@ -1,1 +1,0 @@
-argz_create_sep(<field "const char *STRING">, <field "int SEP">, <field "char **ARGZ">, <field "size_t *ARGZ_LEN">)<endpoint>

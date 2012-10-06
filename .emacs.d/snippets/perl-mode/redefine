@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: { no warnings 'redefine'; ... }
-# key: redefine
-# --
-{ no warnings 'redefine';
-  *${1:original_sub} = sub {
-     $0
-  };
-}

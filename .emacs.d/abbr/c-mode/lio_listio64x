@@ -1,1 +1,0 @@
-lio_listio64(<field "int MODE">, <field "struct aiocb *const LIST">, <field "int NENT">, <field "struct sigevent *SIG">)<endpoint>

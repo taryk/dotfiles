@@ -1,1 +1,0 @@
-argz_add_sep(<field "char **ARGZ">, <field "size_t *ARGZ_LEN">, <field "const char *STR">, <field "int DELIM">)<endpoint>

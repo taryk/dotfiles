@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: ... for ...
-# key: xfor
-# --
-${1:expression} for @${2:list_context};

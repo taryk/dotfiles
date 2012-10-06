@@ -1,1 +1,0 @@
-argz_extract(<field "char *ARGZ">, <field "size_t ARGZ_LEN">, <field "char **ARGV">)<endpoint>

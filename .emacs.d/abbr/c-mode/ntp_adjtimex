@@ -1,1 +1,0 @@
-ntp_adjtime(<field "struct timex *TPTR">)<endpoint>

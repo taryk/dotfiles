@@ -1,1 +1,0 @@
-sched_rr_get_interval(<field "pid_t PID">, <field "struct timespec *INTERVAL">)<endpoint>

@@ -1,1 +1,0 @@
-stat(<field "const char *FILENAME">, <field "struct stat *BUF">)<endpoint>

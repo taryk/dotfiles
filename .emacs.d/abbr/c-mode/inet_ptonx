@@ -1,1 +1,0 @@
-inet_pton(<field "int AF">, <field "const char *CP">, <field "void *BUF">)<endpoint>

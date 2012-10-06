@@ -1,1 +1,0 @@
-bind_textdomain_codeset(<field "const char *DOMAINNAME">, <field "const char *CODESET">)<endpoint>

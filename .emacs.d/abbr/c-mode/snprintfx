@@ -1,1 +1,0 @@
-snprintf(<field "char *S">, <field "size_t SIZE">, <field "const char *TEMPLATE">, <field "...">)<endpoint>

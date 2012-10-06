@@ -1,1 +1,0 @@
-argz_stringify(<field "char *ARGZ">, <field "size_t LEN">, <field "int SEP">)<endpoint>

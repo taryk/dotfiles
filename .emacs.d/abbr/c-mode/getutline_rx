@@ -1,1 +1,0 @@
-getutline_r(<field "const struct utmp *LINE">, <field "struct utmp *BUFFER">, <field "struct utmp **RESULT">)<endpoint>

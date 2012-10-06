@@ -1,1 +1,0 @@
-getutent_r(<field "struct utmp *BUFFER">, <field "struct utmp **RESULT">)<endpoint>

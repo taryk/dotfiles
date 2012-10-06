@@ -1,1 +1,0 @@
-iconv_open(<field "const char *TOCODE">, <field "const char *FROMCODE">)<endpoint>

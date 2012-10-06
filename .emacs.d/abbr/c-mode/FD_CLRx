@@ -1,1 +1,0 @@
-FD_CLR(<field "int FILEDES">, <field "fd_set *SET">)<endpoint>

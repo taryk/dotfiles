@@ -1,1 +1,0 @@
-strtok_r(<field "char *NEWSTRING">, <field "const char *DELIMITERS">, <field "char **SAVE_PTR">)<endpoint>

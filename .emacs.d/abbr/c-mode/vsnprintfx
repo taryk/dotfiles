@@ -1,1 +1,0 @@
-vsnprintf(<field "char *S">, <field "size_t SIZE">, <field "const char *TEMPLATE">, <field "va_list AP">)<endpoint>

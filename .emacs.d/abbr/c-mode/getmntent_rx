@@ -1,1 +1,0 @@
-getmntent_r(<field "FILE *STREAM">, <field "struct mentent *RESULT">, <field "char *BUFFER">, <field "int BUFSIZE">)<endpoint>

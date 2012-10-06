@@ -1,1 +1,0 @@
-argz_next(<field "char *ARGZ">, <field "size_t ARGZ_LEN">, <field "const char *ENTRY">)<endpoint>

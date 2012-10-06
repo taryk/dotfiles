@@ -1,1 +1,0 @@
-FD_ISSET(<field "int FILEDES">, <field "const fd_set *SET">)<endpoint>

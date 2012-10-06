@@ -1,1 +1,0 @@
-fseeko(<field "FILE *STREAM">, <field "off_t OFFSET">, <field "int WHENCE">)<endpoint>

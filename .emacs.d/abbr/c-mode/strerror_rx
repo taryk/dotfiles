@@ -1,1 +1,0 @@
-strerror_r(<field "int ERRNUM">, <field "char *BUF">, <field "size_t N">)<endpoint>

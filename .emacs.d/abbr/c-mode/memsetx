@@ -1,1 +1,0 @@
-memset(<field "void *BLOCK">, <field "int C">, <field "size_t SIZE">)<endpoint>
