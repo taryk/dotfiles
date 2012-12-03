@@ -29,8 +29,8 @@ function mkbackupdir {
 }
 
 function submodules-update {
-    echo "Updating submodules.."
-    git submodule update --init
+    echo "Updating submodules..."
+    git submodule update --init --recursive
     echo "done"
 }
 
