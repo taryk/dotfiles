@@ -25,6 +25,9 @@
 	lga = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all
 	l19 = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all -19
 	lsd = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all --simplify-by-decoration
+        lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+        lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+        # lg = !"git lg1"
 
 	ru = remote update
 	sb = show-branch --sha1-name
