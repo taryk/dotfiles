@@ -36,6 +36,7 @@
 	ls-new = ls-files --exclude-standard -o
 	ls-ign = ls-files --exclude-standard -o -i
 
+        unstage = reset HEAD --
         grep-rep = !git grep
         grep-rep-path = !cd . && git grep
 
