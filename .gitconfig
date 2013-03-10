@@ -1,5 +1,5 @@
 [user]
-	name = Taras Yagniuk
+	name = Taras Iagniuk
 	email = mrtaryk@gmail.com
 [filter "rcs-keywords"]
 	clean  = .git_filters/rcs-keywords.clean
