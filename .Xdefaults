@@ -124,3 +124,6 @@ Urxvt.internalBorder:        2
 
 ! xterm
 XTerm*bellIsUrgent:  true
+
+! xscreensaver
+xscreensaver.timeout: 5
