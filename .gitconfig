@@ -1,40 +1,37 @@
 [user]
-	name = Taras Iagniuk
-	email = mrtaryk@gmail.com
+        name = Taras Iagniuk
+        email = mrtaryk@gmail.com
 [filter "rcs-keywords"]
-	clean  = .git_filters/rcs-keywords.clean
-	smudge = .git_filters/rcs-keywords.smudge %f
+        clean  = .git_filters/rcs-keywords.clean
+        smudge = .git_filters/rcs-keywords.smudge %f
 [alias]
-	s = status
-	b = branch
-	ba = branch -a -v -v
-	bs = !git-branch-status
-	bsi = !git-branch-status -i
-	ci = commit
-	co = checkout
+        s = status
+        b = branch
+        ba = branch -a -v -v
+        bs = !git-branch-status
+        ci = commit
+        co = checkout
+        pl = pull --rebase
 
-	d = diff -C
-	ds = diff -C --stat
-	dsp = diff -C --stat -p
-	dw = diff -C --color-words
+        d = diff -C
+        ds = diff -C --stat
+        dsp = diff -C --stat -p
+        dw = diff -C --color-words
 
-	l = log -C --decorate
-	ls = log -C --stat --decorate
-	lsp = log -C --stat -p --decorate
-	lg = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset'
-	lga = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all
-	l19 = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all -19
-	lsd = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all --simplify-by-decoration
-        lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
-        lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
-        # lg = !"git lg1"
+        l = log -C --decorate
+        ls = log -C --stat --decorate
+        lsp = log -C --stat -p --decorate
+        lg = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset'
+        lga = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all
+        l19 = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all -19
+        lsd = log --graph '--pretty=tformat:%Cred%h%Creset %Cgreen(%ar)%Creset %Cblue%d%Creset %s %Cred%aN%Creset %Cblue<%aE>%Creset' --all --simplify-by-decoration
 
-	ru = remote update
-	sb = show-branch --sha1-name
-	ls-del = ls-files -d
-	ls-mod = ls-files -m
-	ls-new = ls-files --exclude-standard -o
-	ls-ign = ls-files --exclude-standard -o -i
+        ru = remote update
+        sb = show-branch --sha1-name
+        ls-del = ls-files -d
+        ls-mod = ls-files -m
+        ls-new = ls-files --exclude-standard -o
+        ls-ign = ls-files --exclude-standard -o -i
 
         unstage = reset HEAD --
         last = log -1 HEAD
@@ -42,42 +39,48 @@
         grep-rep = !git grep
         grep-rep-path = !cd . && git grep
 
-	ka = !gitk --all
-	kdo = !gitk --date-order
-	kado = !gitk --all --date-order
-	kasd = !gitk --all --simplify-by-decoration
+        ka = !gitk --all
+        kdo = !gitk --date-order
+        kado = !gitk --all --date-order
+        kasd = !gitk --all --simplify-by-decoration
 [color]
-	branch = auto
-	diff = auto
-	status = auto
-	grep = auto
-	interactive = auto
+        branch = auto
+        diff = auto
+        status = auto
+        grep = auto
+        interactive = auto
 [color "diff"]
-	plain = normal
-	meta = bold
-	frag = cyan
-	old = red
-	new = green
-	commit = yellow
-	whitespace = normal red
+        plain = normal
+        meta = bold
+        frag = cyan
+        old = red
+        new = green
+        commit = yellow
+        whitespace = normal red
 [color "branch"]
-	current = green
-	local = normal
-	remote = cyan
-	plain = normal
+        current = green
+        local = normal
+        remote = cyan
+        plain = normal
 [color "status"]
-	header = normal
-	added = blue
-	updated = yellow
-	changed = blue
-	untracked = normal
-	nobranch = red
+        header = normal
+        added = blue
+        updated = yellow
+        changed = blue
+        untracked = normal
+        nobranch = red
 [color "grep"]
-	match = normal
+        match = normal
 [color "interactive"]
-	prompt = normal
-	header = normal
-	help = normal
-	error = normal
+        prompt = normal
+        header = normal
+        help = normal
+        error = normal
 [merge]
-	tool = meld
+        tool = meld
+[giggle]
+        main-window-maximized = false
+        main-window-geometry = 1151x887+2093+88
+        history-view-vpane-position = 316
+        main-window-view = HistoryView
+        file-view-vpane-position = 766
