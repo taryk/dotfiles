@@ -48,8 +48,7 @@
    XF86AudioMute
 
 #Translate selected text
-"/home/taryk/bin/notify_translate.sh"
-   XF86Search
-
+"/home/taras/bin/notify_translate.sh"
+   XF86Calculator
 #
 # End of xbindkeys configuration
