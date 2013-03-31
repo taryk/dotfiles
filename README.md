@@ -3,15 +3,15 @@ Dotfiles
 
 | Item | Description |
 | --- | --- |
-| [bin](https://github.com/taryk/scripts) | Local scripts (originally from [scripts](https://github.com/taryk/scripts) repository) |
-| [.emacs.d](https://github.com/taryk/emacs.d) | [emacs](http://www.gnu.org/software/emacs/) initial config (originally from [emacs.d](https://github.com/taryk/emacs.d) repository) |
-| [.perltidyrc](https://github.com/taryk/dotfiles/blob/master/.perltidyrc) | [PerlTidy](https://metacpan.org/module/Perl::Tidy) rc file |
-| [.xbindkeysrc](https://github.com/taryk/dotfiles/blob/master/.xbindkeysrc) | Key bindings |
-| [.Xdefaults](https://github.com/taryk/dotfiles/blob/master/.Xdefaults) | Here's [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) configuration |
-| [.xxkbrc](https://github.com/taryk/dotfiles/blob/master/.xxkbrc) | [XXkb](http://sourceforge.net/projects/xxkb/) rc file |
-| [.zshrc](https://github.com/taryk/zshrc) | The [Z shell](http://www.zsh.org/) initial config (originally from [zshrc](https://github.com/taryk/zshrc) repository) |
-| [.gitconfig](https://github.com/taryk/dotfiles/blob/master/.gitconfig) | [git](http://git-scm.com/) configuration file |
-| [.config/awesome](https://github.com/taryk/awesomerc) | [Awesome WM](http://awesome.naquadah.org/) configuration scripts (originally from [awesomerc](https://github.com/taryk/awesomerc) repository) |
+| [bin][1] | Local scripts (originally from [scripts][1] repository) |
+| [.emacs.d][2] | [emacs][10] initial config (originally from [emacs.d][2] repository) |
+| [.perltidyrc][3] | [PerlTidy][11] rc file |
+| [.xbindkeysrc][4] | Key bindings |
+| [.Xdefaults][5] | Here's [urxvt][12] configuration |
+| [.xxkbrc][6] | [XXkb][13] rc file |
+| [.zshrc][7] | The [Z shell][14] initial config (originally from [zshrc][17] repository) |
+| [.gitconfig][8] | [git][15] configuration file |
+| [.config/awesome][9] | [Awesome WM][16] configuration scripts (originally from [awesomerc][9] repository) |
 
 # Installation #
 
@@ -47,3 +47,21 @@ Just run the `install.sh`
     ------------------------
     Finished successfully
     $
+
+[1]: https://github.com/taryk/scripts
+[2]: https://github.com/taryk/emacs.d
+[3]: https://github.com/taryk/dotfiles/blob/master/.perltidyrc
+[4]: https://github.com/taryk/dotfiles/blob/master/.xbindkeysrc
+[5]: https://github.com/taryk/dotfiles/blob/master/.Xdefaults
+[6]: https://github.com/taryk/dotfiles/blob/master/.xxkbrc
+[7]: https://github.com/taryk/dotfiles/blob/master/.zshrc
+[8]: https://github.com/taryk/dotfiles/blob/master/.gitconfig
+[9]: https://github.com/taryk/awesomerc
+[10]: http://www.gnu.org/software/emacs/
+[11]: https://metacpan.org/module/Perl::Tidy
+[12]: http://software.schmorp.de/pkg/rxvt-unicode.html
+[13]: http://sourceforge.net/projects/xxkb/
+[14]: http://www.zsh.org/
+[15]: http://git-scm.com/
+[16]: http://awesome.naquadah.org/
+[17]: https://github.com/taryk/zshrc
