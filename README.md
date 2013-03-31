@@ -1,17 +1,17 @@
 Dotfiles
 ========
 
-| Item | Description |
-| --- | --- |
-| [bin][1] | Local scripts (originally from [scripts][1] repository) |
-| [.emacs.d][2] | [emacs][10] initial config (originally from [emacs.d][2] repository) |
-| [.perltidyrc][3] | [PerlTidy][11] rc file |
-| [.xbindkeysrc][4] | Key bindings |
-| [.Xdefaults][5] | Here's [urxvt][12] configuration |
-| [.xxkbrc][6] | [XXkb][13] rc file |
-| [.zshrc][7] | The [Z shell][14] initial config (originally from [zshrc][17] repository) |
-| [.gitconfig][8] | [git][15] configuration file |
-| [.config/awesome][9] | [Awesome WM][16] configuration scripts (originally from [awesomerc][9] repository) |
+| Item                  | Description                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| [bin][1]              | Local scripts (originally from [scripts][1] repository)                                     |
+| [.emacs.d][2]         | [Emacs][10] initial config (originally from [emacs.d][2] repository)                        |
+| [.perltidyrc][3]      | [PerlTidy][11] rc file                                                                      |
+| [.xbindkeysrc][4]     | Key bindings                                                                                |
+| [.Xdefaults][5]       | Here's [urxvt][12] configuration                                                            |
+| [.xxkbrc][6]          | [XXkb][13] rc file                                                                          |
+| [.zshrc][7]           | Initial starter of The [Z Shell][14] (`~/.zsh/` is originally from [zshrc][17] repository)  |
+| [.gitconfig][8]       | [Git][15] configuration file                                                                |
+| [.config/awesome][9]  | [Awesome WM][16] configuration scripts (originally from [awesomerc][9] repository)          |
 
 # Installation #
 
