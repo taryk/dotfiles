@@ -1,17 +1,17 @@
 Dotfiles
 ========
 
-Item | Description
---- | ---
-bin | Local scripts (originally from [scripts](https://github.com/taryk/scripts) repository)
-.emacs.d | [emacs](http://www.gnu.org/software/emacs/) initial config (originally from [emacs.d](https://github.com/taryk/emacs.d) repository)
-.perltidyrc | [PerlTidy](https://metacpan.org/module/Perl::Tidy) rc file
-.xbindkeysrc | Key bindings
-.Xdefaults | Here's [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) configuration
-.xxkbrc | [XXkb](http://sourceforge.net/projects/xxkb/) rc file
-.zshrc | The [Z shell](http://www.zsh.org/) initial config (originally from [zshrc](https://github.com/taryk/zshrc) repository)
-.gitconfig | [git](http://git-scm.com/) configuration file
-.config/awesome | [Awesome WM](http://awesome.naquadah.org/) configuration scripts (originally from [awesomerc](https://github.com/taryk/awesomerc) repository)
+| Item | Description |
+| --- | --- |
+| [bin](https://github.com/taryk/scripts) | Local scripts (originally from [scripts](https://github.com/taryk/scripts) repository) |
+| [.emacs.d](https://github.com/taryk/emacs.d) | [emacs](http://www.gnu.org/software/emacs/) initial config (originally from [emacs.d](https://github.com/taryk/emacs.d) repository) |
+| [.perltidyrc](https://github.com/taryk/dotfiles/blob/master/.perltidyrc) | [PerlTidy](https://metacpan.org/module/Perl::Tidy) rc file |
+| [.xbindkeysrc](https://github.com/taryk/dotfiles/blob/master/.xbindkeysrc) | Key bindings |
+| [.Xdefaults](https://github.com/taryk/dotfiles/blob/master/.Xdefaults) | Here's [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) configuration |
+| [.xxkbrc](https://github.com/taryk/dotfiles/blob/master/.xxkbrc) | [XXkb](http://sourceforge.net/projects/xxkb/) rc file |
+| [.zshrc](https://github.com/taryk/zshrc) | The [Z shell](http://www.zsh.org/) initial config (originally from [zshrc](https://github.com/taryk/zshrc) repository) |
+| [.gitconfig](https://github.com/taryk/dotfiles/blob/master/.gitconfig) | [git](http://git-scm.com/) configuration file |
+| [.config/awesome](https://github.com/taryk/awesomerc) | [Awesome WM](http://awesome.naquadah.org/) configuration scripts (originally from [awesomerc](https://github.com/taryk/awesomerc) repository) |
 
 # Installation #
 
