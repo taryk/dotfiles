@@ -1,34 +1,17 @@
 Dotfiles
 ========
 
-## bin
-Local scripts
-
-## .emacs.d
-[emacs](http://www.gnu.org/software/emacs/) initial config
-
-## .perltidyrc
-
-[PerlTidy](https://metacpan.org/module/Perl::Tidy) rc file
-
-## .xbindkeysrc
-key bindings
-
-## .Xdefaults
-here is [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) configuration
-
-## .xxkbrc
-[XXkb](http://sourceforge.net/projects/xxkb/) rc file
-
-## .zshrc
-the [Z shell](http://www.zsh.org/) initial config
-
-## .gitconfig
-[git](http://git-scm.com/) configuration file
-
-## .config/awesome
-[Awesome WM](http://awesome.naquadah.org/) configuration scripts
-
+Item | Description
+--- | ---
+bin | Local scripts (originally from [scripts](https://github.com/taryk/scripts) repository)
+.emacs.d | [emacs](http://www.gnu.org/software/emacs/) initial config (originally from [emacs.d](https://github.com/taryk/emacs.d) repository)
+.perltidyrc | [PerlTidy](https://metacpan.org/module/Perl::Tidy) rc file
+.xbindkeysrc | Key bindings
+.Xdefaults | Here's [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) configuration
+.xxkbrc | [XXkb](http://sourceforge.net/projects/xxkb/) rc file
+.zshrc | The [Z shell](http://www.zsh.org/) initial config (originally from [zshrc](https://github.com/taryk/zshrc) repository)
+.gitconfig | [git](http://git-scm.com/) configuration file
+.config/awesome | [Awesome WM](http://awesome.naquadah.org/) configuration scripts (originally from [awesomerc](https://github.com/taryk/awesomerc) repository)
 
 # Installation #
 
