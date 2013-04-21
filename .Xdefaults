@@ -7,7 +7,7 @@ Emacs.FontBackend: xft
 !  scrollbar style - rxvt (default), plain (most compact), next, or xterm
 URxvt*scrollstyle:plain
 
-URxvt.perl-lib:/home/taryk/sources/perl/urxvt-perls
+URxvt.perl-lib:/home/taryk/.urxvt/urxvt-perls
 
 URxvt.perl-ext-common:  default,tabbed,keyboard-select,url-select,clipboard
 
