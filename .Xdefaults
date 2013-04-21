@@ -1,5 +1,6 @@
 ! Emacs
 Emacs.FontBackend: xft
+! Emacs*Background: #333333
 
 ! URxvt.depth: 32
 ! URxvt.background: rgba:1111/1111/1111/dddd
@@ -54,7 +55,7 @@ URxvt.tabbed.tab-bg:    0
 
 ! disable print screen
 rxvt.print-pipe: "cat > /dev/null"
-urxvt.print-pipe: "cat > /dev/null"
+URxvt.print-pipe: "cat > /dev/null"
 
 ! browser/command to open selected URL with
 URxvt.urlLauncher:   /usr/bin/x-www-browser
@@ -65,11 +66,17 @@ URvxt.urlButton:     2
 
 URxvt.termName:              rxvt-unicode
 URxvt.urgentOnBell:          true
-Urxvt.insecure:              false
+URxvt.insecure:              false
 URxvt.transparent:           false
-Urxvt.loginShell:            true
-Urxvt.hold:                  false
-Urxvt.mouseWheelScrollPage:  true
+URxvt.loginShell:            true
+URxvt.hold:                  false
+
+! True: the mouse wheel scrolls a page full. False: the mouse wheel scrolls five lines [default].
+URxvt.mouseWheelScrollPage:  false
+
+URxvt.jumpScroll:            false
+! URxvt.skipScroll:            true
+
 ! True: scroll to bottom when tty receives output; option -si. False: do not scroll to bottom when tty receives output; option +si.
 URxvt.scrollTtyOutput:       false
 
@@ -84,21 +91,21 @@ URxvt.saveLines:             10000
 URxvt.cursorBlink:           true
 URxvt.geometry:              100x50
 URxvt.fading:                6%
-urxvt.font:                  xft:Ubuntu Mono:pixelsize=16
-urxvt.boldFont:              xft:Ubuntu Mono:bold:pixelsize=16
+URxvt.font:                  xft:Ubuntu Mono:pixelsize=16
+URxvt.boldFont:              xft:Ubuntu Mono:bold:pixelsize=16
 URxvt*background:            #303030
-urxvt.depth:                 32
-URxvt.background:            rgba:0000/0000/0000/dddd
+URxvt.depth:                 32
+! URxvt.background:            rgba:0000/0000/0000/dddd
 !                            URxvt.background: rgba:3f00/3f00/3f00/dddd
-URxvt.foreground:            grey80
+! URxvt.foreground:            grey80
 URxvt.tintColor:             #262626
-!URxvt.borderLess:           true
+! URxvt.borderLess:           true
 URxvt.borderColor:           #888888
-Urxvt.externalBorder:        0
-Urxvt.internalBorder:        2
-! urxvt*scrollColor:
-! urxvt*underlineColor:
-! urxvt*highlightColor:
+URxvt.externalBorder:        0
+URxvt.internalBorder:        1
+! URxvt*scrollColor:
+! URxvt*underlineColor:
+! URxvt*highlightColor:
 
 
 URxvt.foreground:     grey80
