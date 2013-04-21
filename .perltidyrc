@@ -13,7 +13,7 @@
 -nsfs  # No space before semicolons
 -nolq  # Don't outdent long quoted strings
 -isbc  # Block comments may only be indented if they have some space characters before the #
--b     # We use version control, so just rewrite the file
+# -b     # We use version control, so just rewrite the file
 -wbb="% + - * / x != == >= <= =~ !~ < > | & >= < = **= += *= &= <<= &&= -= /= |= >>= ||= .= %= ^= x="
        # Break before all operators
 
