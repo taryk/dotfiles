@@ -80,24 +80,19 @@ URxvt.jumpScroll:            false
 ! True: scroll to bottom when tty receives output; option -si. False: do not scroll to bottom when tty receives output; option +si.
 URxvt.scrollTtyOutput:       false
 
-
 URxvt.scrollWithBuffer:      true
 URxvt.scrollTtyKeypress:     true
 
-!                            URxvt.inheritPixmap: False
+! URxvt.inheritPixmap:       false
 URxvt.imLocale:              en_US.UTF-8
-!                            URxvt.scrollBar: false
+! URxvt.scrollBar:           false
 URxvt.saveLines:             10000
 URxvt.cursorBlink:           true
 URxvt.geometry:              100x50
 URxvt.fading:                6%
 URxvt.font:                  xft:Ubuntu Mono:pixelsize=16
 URxvt.boldFont:              xft:Ubuntu Mono:bold:pixelsize=16
-URxvt*background:            #303030
 URxvt.depth:                 32
-! URxvt.background:            rgba:0000/0000/0000/dddd
-!                            URxvt.background: rgba:3f00/3f00/3f00/dddd
-! URxvt.foreground:            grey80
 URxvt.tintColor:             #262626
 ! URxvt.borderLess:           true
 URxvt.borderColor:           #888888
