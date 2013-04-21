@@ -13,6 +13,7 @@ bin
 .emacs-private
 .xbindkeysrc
 .xxkbrc
+.urxvt
 .Xdefaults
 .perltidyrc
 .config/awesome
