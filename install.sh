@@ -16,6 +16,7 @@ bin
 .Xdefaults
 .perltidyrc
 .config/awesome
+.tmux.conf
 )
 
 BACKUPDIR="${HOME}/backups/backup-$(date +'%Y%m%d%H%M%S')"
