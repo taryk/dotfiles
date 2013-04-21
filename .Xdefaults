@@ -71,7 +71,7 @@ Urxvt.loginShell:            true
 Urxvt.hold:                  false
 Urxvt.mouseWheelScrollPage:  true
 !                            URxvt.inheritPixmap: False
-URxvt.imLocale:              uk_UA.UTF-8
+URxvt.imLocale:              en_US.UTF-8
 !                            URxvt.scrollBar: false
 URxvt.saveLines:             5000
 URxvt.urlLauncher:           /usr/bin/chromium-browser
