@@ -10,6 +10,7 @@ Dotfiles
 | [.Xdefaults][5]       | Here's [urxvt][12] configuration                                                            |
 | [.xxkbrc][6]          | [XXkb][13] rc file                                                                          |
 | [.zshrc][7]           | Initial starter of The [Z Shell][14] (`~/.zsh/` is originally from [zshrc][17] repository)  |
+| [.tmux.conf][18]      | [Tmux][19] config                                                                           |
 | [.gitconfig][8]       | [Git][15] configuration file                                                                |
 | [.config/awesome][9]  | [Awesome WM][16] configuration scripts (originally from [awesomerc][9] repository)          |
 
@@ -65,3 +66,5 @@ Just run the `install.sh`
 [15]: http://git-scm.com/
 [16]: http://awesome.naquadah.org/
 [17]: https://github.com/taryk/zshrc
+[18]: https://github.com/taryk/dotfiles/blob/master/.tmux.conf
+[19]: http://tmux.sourceforge.net/
