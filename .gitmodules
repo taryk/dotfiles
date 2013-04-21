@@ -10,3 +10,6 @@
 [submodule "bin"]
 	path = bin
 	url = https://github.com/taryk/scripts.git
+[submodule ".urxvt/urxvt-perls"]
+	path = .urxvt/urxvt-perls
+	url = git://github.com/muennich/urxvt-perls.git
