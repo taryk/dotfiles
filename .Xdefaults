@@ -73,7 +73,7 @@ Urxvt.mouseWheelScrollPage:  true
 !                            URxvt.inheritPixmap: False
 URxvt.imLocale:              en_US.UTF-8
 !                            URxvt.scrollBar: false
-URxvt.saveLines:             5000
+URxvt.saveLines:             10000
 URxvt.cursorBlink:           true
 URxvt.geometry:              100x50
 URxvt.fading:                6%
