@@ -13,6 +13,7 @@ bin
 .emacs-private
 .xbindkeysrc
 .xxkbrc
+.gitconfig
 .urxvt
 .Xdefaults
 .perltidyrc
