@@ -23,32 +23,34 @@ Just run the `install.sh`
     ------------------
     Updating submodules..
     [ ... skipped lines ... ]
-    
-    [1/13]: install '/home/taryk/bin' [y/n] ? y
+
+    [1/14]: install '/home/taryk/bin' [y/n] ? y
     done
-    [2/13]: install '/home/taryk/.zshrc' [y/n] ? y
+    [2/14]: install '/home/taryk/.zshrc' [y/n] ? y
     done
-    [3/13]: install '/home/taryk/.zsh' [y/n] ? y
+    [3/14]: install '/home/taryk/.zsh' [y/n] ? y
     done
-    [4/13]: install '/home/taryk/.emacs' [y/n] ? y
+    [4/14]: install '/home/taryk/.emacs' [y/n] ? y
     done
-    [5/13]: install '/home/taryk/.emacs.d' [y/n] ? y
+    [5/14]: install '/home/taryk/.emacs.d' [y/n] ? y
     done
-    [6/13]: install '/home/taryk/.emacs-private' [y/n] ? y
+    [6/14]: install '/home/taryk/.emacs-private' [y/n] ? y
     done
-    [7/13]: install '/home/taryk/.xbindkeysrc' [y/n] ? y
+    [7/14]: install '/home/taryk/.xbindkeysrc' [y/n] ? y
     done
-    [8/13]: install '/home/taryk/.xxkbrc' [y/n] ? y
+    [8/14]: install '/home/taryk/.xxkbrc' [y/n] ? y
     done
-    [9/13]: install '/home/taryk/.urxvt' [y/n] ? y
+    [9/14]: install '/home/taryk/.gitconfig' [y/n] ? y
     done
-    [10/13]: install '/home/taryk/.Xdefaults' [y/n] ? y
+    [10/14]: install '/home/taryk/.urxvt' [y/n] ? y
     done
-    [11/13]: install '/home/taryk/.perltidyrc' [y/n] ? y
+    [11/14]: install '/home/taryk/.Xdefaults' [y/n] ? y
     done
-    [12/13]: install '/home/taryk/.config/awesome' [y/n] ? y
+    [12/14]: install '/home/taryk/.perltidyrc' [y/n] ? y
     done
-    [13/13]: install '/home/taryk/.tmux.conf' [y/n] ? y
+    [13/14]: install '/home/taryk/.config/awesome' [y/n] ? y
+    done
+    [14/14]: install '/home/taryk/.tmux.conf' [y/n] ? y
     done
     
     ------------------------
