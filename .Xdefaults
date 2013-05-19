@@ -90,8 +90,8 @@ URxvt.saveLines:             10000
 URxvt.cursorBlink:           true
 URxvt.geometry:              100x50
 URxvt.fading:                6%
-URxvt.font:                  xft:Ubuntu Mono:pixelsize=16
-URxvt.boldFont:              xft:Ubuntu Mono:bold:pixelsize=16
+URxvt.font:                  xft:Ubuntu Mono:pixelsize=14
+URxvt.boldFont:              xft:Ubuntu Mono:bold:pixelsize=14
 URxvt.depth:                 32
 URxvt.tintColor:             #262626
 ! URxvt.borderLess:           true
