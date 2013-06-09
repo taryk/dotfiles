@@ -5,7 +5,7 @@
 # harsh                                              3
 # cruel                                              2
 # brutal                                             1
-severity  = cruel
+severity  = brutal
 
 only      = 1                                     # Zero or One
 
