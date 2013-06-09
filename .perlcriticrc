@@ -28,3 +28,57 @@ color     = 1                                     # Zero or One
 allow-unsafe = 1                                  # Zero or One
 
 pager     = less                                  # pager to pipe output to
+
+# -------------------------------------------------------
+# these are really important, so always load them
+[TestingAndDebugging::RequireUseStrict]
+severity = gentle
+equivalent_modules = common::sense
+
+[TestingAndDebugging::RequireUseWarnings]
+severity = gentle
+equivalent_modules = common::sense
+
+[TestingAndDebugging::ProhibitNoWarnings]
+allow = uninitialized
+
+# -------------------------------------------------------
+
+[NamingConventions::Capitalization]
+local_lexical_variables = :all_lower
+scoped_lexical_variables = :all_lower
+file_lexical_variables = :all_lower
+global_variables = :all_lower
+subroutines = :all_lower
+labels = :all_lower
+constants = :all_upper
+packages = :no_restriction
+
+[InputOutput::RequireCheckedSyscalls]
+functions = :builtins
+exclude_functions = close print say sleep
+
+[Subroutines::ProhibitUnusedPrivateSubroutines]
+private_name_regex = _(?!_)\w+
+
+# -------------------------------------------------------
+
+[-BuiltinFunctions::ProhibitReverseSortBlock]
+[-CodeLayout::ProhibitParensWithBuiltins]
+[-CodeLayout::RequireFinalSemicolon]
+[-CodeLayout::RequireTidyCode]
+[-CodeLayout::RequireTrailingCommaAtNewline]
+[-ControlStructures::ProhibitPostfixControls]
+[-ControlStructures::ProhibitUnlessBlocks]
+[-Documentation::RequirePodAtEnd]
+[-Documentation::RequirePodSections]
+[-ErrorHandling::RequireCarping]
+[-InputOutput::RequireBracedFileHandleWithPrint]
+[-Miscellanea::RequireRcsKeywords]
+[-Modules::RequireVersionVar]
+[-Subroutines::RequireArgUnpacking]
+[-Subroutines::RequireFinalReturn]
+[-ValuesAndExpressions::ProhibitCommaSeparatedStatements]
+[-ValuesAndExpressions::ProhibitEmptyQuotes]
+[-ValuesAndExpressions::ProhibitMagicNumbers]
+[-ValuesAndExpressions::ProhibitNoisyQuotes]
