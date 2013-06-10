@@ -1,10 +1,4 @@
-# SEVERITY NAME ...is equivalent to... SEVERITY NUMBER
-# ----------------------------------------------------
-# gentle                                             5
-# stern                                              4
-# harsh                                              3
-# cruel                                              2
-# brutal                                             1
+# gentle == 5, stern == 4, harsh == 3, cruel == 2, brutal == 1
 severity  = brutal
 
 only      = 1                                     # Zero or One
