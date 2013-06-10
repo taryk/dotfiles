@@ -1,6 +1,6 @@
 ;;; .emacs --- emacs initial config
 
-;; Author: Taras Yagniuk <truestyler@gmail.com>
+;; Author: Taras Iagniuk <mrtaryk@gmail.com>
 ;; Version: 0.2
 ;; Keywords: emacs, perl, xs, javascript, ruby, python, php, lua, irc
 
