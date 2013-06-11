@@ -1,0 +1,50 @@
+activity ""
+altscreen on
+autodetach on
+defbce on
+deflogin on
+defflow off
+defscrollback 2048
+defutf8 on
+msgwait 1
+nethack on
+nonblock on
+startup_message off
+vbell off
+vbell_msg ""
+
+bell_msg "!!! Ding !!!"
+
+# Only S-K to kill
+bind k
+bind ^k
+bind K kill
+
+bind j focus down
+bind k focus up
+
+bindkey -k k; quit
+
+term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# caption always "%{kB}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kB}%?%+Lw%?"
+# caption always "%{= kb}[ %=%{w}%?%-Lw%?%{b}(%{W}%n*%f %t%?(%u)%?%{b})%{w}%?%+Lw%?%?%= %{b}][%{B} %H %{W}%l %{b}][%{B} %Y.%m.%d %{W}%0c %{b}]"
+# caption always "%{.kW}%-w%{.W}%n %t%{-}%{=b kw}%?%+w%? [%{B} %H %{W}%l %{b}][%{B} %Y.%m.%d %{W}%0c %{b}]" #B&W & date&time
+caption always "%{.kW}%-w%{.W}%n %t%{-}%{=b kw}%?%+w%? [%{B} %H %{W}%l %{b}][%{B} %Y.%m.%d %{W}%0c %{b}]" #B&W & date&time
+sorendition +b kG
+
+# screen -t main     1 zsh # run zsh at first
+
+# Experimental. Must fix it...
+#bindkey "^[[5;2~" eval "copy" "stuff ^u"
+bindkey -m "^[[5;2~" stuff ^u
+bindkey -m "^[[6;2~" stuff ^d
+# select 1
+
+# bindkey "^[Od" prev  # change window with ctrl-left
+# bindkey "^[Oc" next  # change window with ctrl-right
+
+# hardstatus alwayslastline "%{BW}%16=%l %{BW}%50=%d/%m/%Y %{BW}%80=%c%="
+hardstatus string "%{.kW}%-w%{.W}%n %t%{-}%{=b kw}%?%+w%? %=%c %d/%m/%Y" #B&W & date&time
+hardstatus string "%{.kW}%-w%{.W}%n %t%{-}%{=b kw}%?%+w%? %=%c %d/%m/%Y" #B&W & date&time
