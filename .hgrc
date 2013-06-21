@@ -1,0 +1,46 @@
+[ui]
+editor   = emacs
+username = Taras Iagniuk <mrtaryk@gmail.com>
+
+[extensions]
+hgext.extdiff=
+color =
+# hgext.notify= 
+# keyword =
+
+[extdiff]
+cmd.vdiff = meld
+
+[color]
+status.modified = blue bold underline red_background
+status.added = green bold
+status.removed = red bold blue_background
+status.deleted = cyan bold underline
+status.unknown = magenta bold underline
+status.ignored = black bold
+
+diff.diffline = bold
+diff.extended = cyan bold
+diff.file_a = red bold
+diff.file_b = green bold
+diff.hunk = magenta
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = bold red_background
+
+[keyword]
+*.default =
+*.conf =
+*.pl =
+*.pm =
+
+[keywordmaps]
+Author = {author|user}
+Date = {date|utcdate}
+Header = {root}/{file},v {node|short} {date|utcdate} {author|user}
+Id = {file|basename},v {node|short} {date|utcdate} {author|user}
+RCSFile = {file|basename},v
+RCSfile = {file|basename},v
+Revision = {node|short}
+Source = {root}/{file},v
