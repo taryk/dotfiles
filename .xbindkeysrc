@@ -50,5 +50,15 @@
 #Translate selected text
 "/home/taras/bin/notify_translate.sh"
    XF86Calculator
+
+"clementine -t"
+   XF86AudioPlay
+
+"clementine -f"
+   XF86AudioNext
+
+"clementine -r"
+   XF86AudioPrev
+
 #
 # End of xbindkeys configuration
