@@ -35,10 +35,12 @@
 
 
 
-"amixer -q set Master 2- unmute"
+#Lower Volume
+"amixer -D pulse set Master 1000- unmute"
    XF86AudioLowerVolume
 
-"amixer -q set Master 2+ unmute"
+#Raise volume
+"amixer -D pulse set Master 1000+ unmute"
    XF86AudioRaiseVolume
 
 #"amixer -q set Master toggle"
