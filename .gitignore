@@ -31,3 +31,6 @@ auto-save-list/*
 org-clock-save.el
 logs/*
 
+# httpie sessions
+#-----------------------
+.httpie/sessions/*
