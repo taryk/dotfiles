@@ -1,6 +1,7 @@
 [user]
         name = Taras Iagniuk
         email = mrtaryk@gmail.com
+        signingkey = XXXXXXXX
 [filter "rcs-keywords"]
         clean  = .git_filters/rcs-keywords.clean
         smudge = .git_filters/rcs-keywords.smudge %f
@@ -86,3 +87,5 @@
         file-view-vpane-position = 766
 [push]
 	default = current
+[commit]
+	gpgsign = true
