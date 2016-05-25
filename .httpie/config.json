@@ -4,6 +4,6 @@
         "help": "https://github.com/jkbr/httpie#config", 
         "httpie": "0.8.0"
     }, 
-    "default_options": ["--verify=no", "--style=fruity", "--session=default"],
+    "default_options": ["--verify=no", "--style=fruity", "--session=default", "--timeout=360"],
     "implicit_content_type": "json"
 }
